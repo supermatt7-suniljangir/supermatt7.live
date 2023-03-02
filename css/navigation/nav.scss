@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+
+
+
+
+
+.nav-lists {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    list-style: none;
+    text-align: center;
+    background-color: rgb(34, 36, 36);
+    cursor: pointer;
+}
+
+.nav-links {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: block;
+    width: 100vw;
+    color: rgb(255, 248, 253);
+
+    &:hover {
+        color: #00ffff;
+    }
+}
+.list-type-1{
+    height: 30vh;
+    padding: 1rem;
+    background-color: rgba(28, 25, 25, 0.788);
+}
+.list-type-2{
+height: 50vh;
+
+}
+.navigation {
+    z-index: 98;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    width: 100vw;
+    height: 100% !important;
+    animation: myanime 1s ease-in-out;
+}
+
+.navbar {
+    z-index: 9000;
+    height: 100vh;
+    margin: 0;
+    width: 0;
+}
+
+.logo-img {
+    border: 2px solid aqua;
+    border-radius: 50%;
+    width: 7rem;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+        border: 2px solid rgb(21, 202, 148);
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.lines {
+    width: 3.6rem;
+    height: 2.5px;
+    background-color: rgb(242, 240, 240);
+    margin: 3px;
+
+    &:first-child {
+        margin-top: 5px;
+    }
+}
+
+.background-for-burger {
+    box-shadow: 0.5rem 5px 10px rgb(0, 0, 0);
+    border-radius: 5%;
+    display: inline-block;
+    background-color: rgba(28, 25, 25, 0.788);
+    margin: 5px;
+    height: 4rem;
+    width: 4.4rem;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.ham-burger {
+    z-index: 10000;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.cancel-pic {
+    width: 3rem;
+
+    height: 2.8rem;
+    z-index: 10000;
+
+}
+
+.sunil {
+    text-align: center;
+    letter-spacing: 3px;
+
+    padding: 1rem;
+}
+
+#sunil {
+    text-transform: uppercase;
+    color: rgba(6, 224, 158, 0.947);
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        transform: skewX(15deg) skewY(-10deg);
+        color: aqua;
+    }
+}
+
+.a-developer {
+    transition: all .5s ease-in-out;
+    color: aqua;
+    font-family: 'Audiowide', cursive !important;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+    &:hover {
+        transform: skewX(-15deg) skewY(10deg);
+        color: rgba(6, 224, 158, 0.947);
+    }
+}
+
+.cancel {
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    position: fixed;
+    align-items: center;
+}
+
+
+#github {
+    width: 20px;
+    height: 20px;
+    
+
+    &:hover {
+        border-radius: 50%;
+        border: 1.5px solid aqua;
+       
+    }
+}
+
+#youtube {
+    width: 23px;
+    height: 23px;
+
+    &:hover {
+        border-radius: 50%;
+        border: 1.5px solid aqua;
+        
+    }
+}
+
+#linkedin {
+    width: 23px;
+background-color: rgb(0, 200, 255);
+border-radius: 50%;
+    &:hover {
+       
+        border: 1.5px solid aqua;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.social-links {
+    display: flex;
+    padding: 1rem;
+}
+
+
+.sunil-is-thinking{
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+    position: fixed;
+    height: 100%;
+    background: rgb(30, 27, 27);
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .loading{
+       width: 50vw;
+       height: 1.5px;
+       background-color: aqua;
+    }
+    .loading-just-wait{
+        width:10vw;
+        height: 2px;
+        background-color:  rgb(255, 11, 11);
+       opacity: 0;
+        animation: myanime3 1.5s ease-in-out infinite;
+    }
+    .wait-a-sec{
+        padding:3rem;
+        font-size: 2rem;
+        color: aqua;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .sunil-is-thinking-logo{
+        width: 10rem;
+       padding-bottom: 5rem;
+    }
+}
+
+    
+
+
+@media only screen and (min-width: 423px) and (max-width: 1024px){
+  
+    .list-type-1{
+        height: 30vh;
+        padding: 1rem;
+    }
+    .list-type-2{
+    height: 50vh;
+    
+    }
+    .sunil-is-thinking{
+    position: fixed;
+    height: 100%;
+    background: rgb(30, 27, 27);
+    width: 100% !important;
+    }
+    
+    .wait-a-sec{
+        padding:0.5rem;
+        font-size: 1.4rem !important;
+        color: aqua;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+@media only screen and (max-width: 416px){
+ 
+    .wait-a-sec{
+        padding: 0.5rem;
+        font-size: 1.2rem !important;}
+}
+#sunil{
+    font-size: 2rem;
+}
+.a-developer{
+    font-size: 1.2rem;
+}

@@ -1,0 +1,99 @@
+#day-theme {
+    width: 2.5rem;
+}
+
+#night-theme {
+    width: 2.5rem;
+}
+
+.day {
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.night {
+    z-index: 100;
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle-background {
+    background-color: papayawhip !important;
+}
+
+.toggle-background2 {
+    background-color: black !important;
+}
+.toggle-background5{
+    background-color: rgb(239, 204, 148) !important;
+}
+.toggle-border-1{
+    border: 3px solid aqua !important;
+}
+.toggle-border-2{
+    border: 3px solid orangered !important;
+}
+.toggle-colors {
+    color: black !important;
+}
+
+.toggle-colors2 {
+    color: orangered !important;
+}
+
+.toggle-background3 {
+    background-color: orangered !important;
+}
+
+.toggle-background4 {
+    background-color: rgba(255, 239, 213, 0.747) !important;
+}
+// .toggle-before-for-i-am-a-developer-1::after{
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     left: 0;
+//     top: 0;
+//     background: #191919 !important;
+//     border-left: 4px solid red;
+//     position: absolute;
+//     animation: i-am-a-developer 4s steps(12) infinite;
+    
+// }
+// .toggle-before-for-i-am-a-developer-2::after{
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     left: 0;
+//     top: 0;
+//     background: papayawhip !important;
+//     border-left: 4px solid red;
+//     position: absolute;
+//     animation: i-am-a-developer 4s steps(12) infinite;
+   
+// }
+.newfocus:focus{
+    border-bottom: 3px solid orangered !important;
+    outline:none;
+    color: orangered !important;
+    // border-bottom-style: hidden !important;
+}
+@media screen and (max-width:500px) {
+
+    #day-theme {
+        width: 2rem;
+    }
+
+    #night-theme {
+        width: 2rem;
+    }
+}

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    background: #000000e6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.back-to-home {
+    font-family: 'Audiowide', sans-serif;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 180%;
+    text-decoration: none;
+    flex-direction: column;
+    color: #00ffff;
+
+    &:hover {
+        color: #00ffffb4;
+    }
+
+    &:hover.back-to-home::before {
+        color: #00ffffb4;
+    }
+
+    &::before {
+        content: "←";
+        font-size: 120%;
+        margin: .5rem;
+        color: #00ffff;
+    }
+}
+
+.full-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.hidden{
+    display: none !important;
+}
+
+
+.flex-for-categories {
+    position: relative;
+    // margin-left: 1rem;
+    width: auto;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: 'open sans', sans-serif;
+    font-weight: 400;
+    font-size: 160%;
+    flex-direction: column;
+    // height: 200vh;
+
+    & a {
+        display: inline-block;
+        white-space: nowrap !important;
+        margin-bottom: .5rem;
+        color: aqua;
+        text-decoration: underline;
+        text-underline-offset: .5rem;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.925);
+          
+
+        }
+    }
+}
+
+.categories-heading-secondary {
+    
+    // margin: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-family: 'open sans', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 300%;
+}
+
+.got-any-questions  {
+    position: fixed;
+    top: 60%;
+    left: .5rem;
+    // margin-left: -1rem;
+    animation: got-any-questions 2s ease-in-out;
+    // animation-delay: 2s;
+    font-size: 140%;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2rem;
+    display: inline-block;
+    width: 21rem;
+    font-family: 'open sans', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #000;
+  
+    // box-shadow: 0 2px 4px -1px rgb(0, 0, 0), 0 4px 5px 0 black, 0 1px 10px 0 rgb(0, 0, 0);
+    box-shadow: 0 2px 4px -1px aqua, 0 4px 5px 0 black, 0 1px 10px 0 aqua;
+
+    border-radius: .5rem;
+
+
+    &:hover #got-any-questions-link {
+        color: #00fffffc;
+    
+    }
+}
+
+
+#got-any-questions-link {
+    padding: 1rem .5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    // &:hover{
+    //     color: #00ffffb4;
+    //     text-decoration: none;
+    // }
+}
+
+.content-flex {
+    margin-left: 5rem;
+    margin-top: -7rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    gap: 2.5rem;
+
+}
+
+.info-on-card {
+    overflow: hidden;
+    height: 40rem;
+    width: 25rem;
+    // background-color: #00ffff;
+    display: flex;
+    flex-direction: column;
+    // box-shadow: 0 2px 0px -1px rgba(13, 216, 219, 0.578), 10px 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgba(13, 216, 219, 0.578);
+    box-shadow: 0 2px 0px -1px aqua, 10px 1px 5px 0 rgba(42, 39, 39, 0.14), 0 1px 1px 0 aqua;
+    border-top: 3px solid rgba(0, 255, 255, 0.959);
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    padding: 1.5rem;
+&:hover{
+    border-top: 3px solid rgba(255, 0, 0, 0.959);
+    box-shadow: 0 2px 0px -1px rgb(28, 30, 30), 10px 4px 5px 0 rgba(42, 39, 39, 0.14), 0 1px 5px 0 rgba(29, 31, 31, 0.995);
+
+}
+}
+.info-on-card :is(.article-image, .heading-for-article){
+cursor: pointer;
+}
+
+.heading-article-category {
+    font-family: 'open sans', sans-serif;
+    font-weight: 700;
+    font-size: 140%;
+   padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading-for-article{
+    cursor: pointer;
+    font-family: 'open sans', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 180%;
+   padding: 1rem;
+    text-align: center;
+    &:hover{
+        color: aqua;
+        text-decoration: none;
+    }
+}
+.articles-info-container{
+    padding: 1rem;
+    overflow: hidden;
+}
+.article-paras{
+    font-size: 160%;
+}
+
+.article-image{
+    width: 90%;
+    height:14rem;
+    border: .3rem solid aqua;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes got-any-questions {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    // 50% {
+    //     transform: translateY(1rem);
+    // }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+//box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+@media screen and (max-width:980px) {
+
+    .full-section {
+        flex-direction: column;
+    }
+    .content-flex {
+        margin: 2rem;
+        justify-content: center;
+        }
+        .categories-heading-secondary{
+            text-decoration: underline;
+            text-underline-offset: .5rem;
+            // background: ;
+            cursor: pointer;
+            padding: .5rem 1rem;
+            box-shadow: 0 2px 4px -1px rgb(0, 0, 0), 0 4px 5px 0 black, 0 1px 10px 0 rgb(0, 0, 0);
+background: #000;
+margin-top: 1rem;
+font-size: 180%;
+&::after{
+    content: " -";
+}
+        }
+        .flex-for-categories{
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            margin: 0;
+            &a{
+                
+                margin-bottom: .5rem;
+                
+            }
+        }
+        .got-any-questions{
+    margin: 0;
+    position: fixed;
+    left: 1rem !important;
+        }
+}
+
+
+@media screen and (max-width:567px) {
+
+    .info-on-card{
+        width: 95%;
+        height: max-content;
+    }
+ .content-flex{
+    justify-content: center;
+ }
+.article-image{
+    margin: 1rem 0;
+}
+}
+@media screen and (max-width:465px) {
+.got-any-questions{
+    font-size: 90%;
+    width: 13rem;
+    padding: .2rem 0rem;
+}
+
+}

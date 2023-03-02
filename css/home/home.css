@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+.categories-heading-secondary {
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-family: "open sans", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 300%;
+}
+
+.got-any-questions {
+  z-index: 80;
+  position: fixed;
+  top: 80%;
+  margin-left: 1rem;
+  animation: got-any-questions 2s ease-in-out;
+  font-size: 130%;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 2rem;
+  display: inline-block;
+  display: inline-block;
+  font-family: "open sans", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #000;
+  box-shadow: 0 2px 4px -1px inherit, 0 4px 5px 0 black, 0 1px 10px 0 inherit;
+  border-radius: 0.5rem;
+}
+.got-any-questions:hover #got-any-questions-link {
+  color: rgba(0, 255, 255, 0.9882352941);
+}
+
+#got-any-questions-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.3rem 1rem;
+  width: 100%;
+  color: #ffffff;
+}
+
+.span-tags {
+  margin-top: 0;
+  margin-left: 3rem;
+  color: white;
+  font-size: 5.3rem !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+.span-tags-2 {
+  margin-top: 2%;
+  margin-left: 3rem;
+  color: white;
+  font-size: 6rem;
+  z-index: 50 !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+.span-tags-3 {
+  margin-top: 2%;
+  margin-left: 3rem;
+  color: white;
+  font-size: 6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.span-tags-4 {
+  margin: 1rem;
+  margin-top: 3%;
+  margin-left: 3rem;
+  color: white;
+  font-size: 6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.span-tags-5 {
+  margin: 1rem;
+  margin-top: 3%;
+  margin-left: 3rem;
+  color: white;
+  font-size: 6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.sunil2 {
+  color: transparent;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  background: linear-gradient(to right bottom, rgb(0, 255, 255), rgb(29, 228, 162));
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  animation: loadhome 1s ease-in-out;
+  position: relative;
+  height: 100%;
+}
+
+#scroll-down-left {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
+  width: 5rem;
+  cursor: pointer;
+  animation: myanime4 1s ease-in-out infinite;
+  display: none;
+}
+
+#scroll-down-right-1 {
+  animation: my;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1rem;
+  width: 5rem;
+  cursor: pointer;
+  animation: myanime4 1s ease-in-out infinite;
+  display: none;
+}
+
+#scroll-down-right-2 {
+  animation: myanime4 1s ease-in-out infinite;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0;
+  width: 6rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.scroll-down {
+  font-size: 4rem;
+}
+
+.span1 {
+  cursor: text !important;
+}
+
+.toggle-hover-animation-2:hover {
+  color: aqua;
+}
+
+.toggle-hover-animation:hover {
+  color: orangered !important;
+}
+
+.flex-for-home {
+  overflow-x: hidden !important;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-for-home-left {
+  margin-top: 10rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.span-1-2 {
+  position: absolute;
+  left: 9rem;
+  top: 2rem;
+}
+
+.span-1-1 {
+  top: 2rem;
+  position: absolute;
+}
+
+#i-am-a {
+  margin-left: 1rem;
+  width: 45rem;
+  height: 40rem;
+}
+
+.i-am-a-developer-container {
+  margin: 2rem;
+  margin-left: 4rem;
+}
+
+.a-frontend-dev {
+  display: inline-block !important;
+  color: aqua;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.developer {
+  font-family: "Ubuntu", sans-serif;
+  padding-right: 0.2rem;
+  display: inline-block !important;
+  position: relative;
+  color: aqua;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.toggle-before-for-i-am-a-developer-1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #191919 !important;
+  border-left: 3px solid aqua;
+  position: absolute;
+  animation: i-am-a-developer 4s steps(16) infinite;
+}
+
+.toggle-before-for-i-am-a-developer-2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: papayawhip !important;
+  border-left: 3px solid red;
+  position: absolute;
+  animation: i-am-a-developer 4s steps(16) infinite;
+}
+
+#cv-download-button-home-id {
+  border: 3px solid aqua;
+  position: relative;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  display: inline-block !important;
+  font-family: "Ubuntu", sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 2rem;
+  margin-left: 4rem;
+  padding: 1rem 1.5rem !important;
+}
+
+#cv-download-button-home-id a {
+  position: relative;
+}
+
+#cv-download-button-home-id:hover a {
+  color: rgba(0, 0, 0, 0.943) !important;
+}
+
+.slide {
+  margin-top: -1rem;
+  width: 100%;
+  height: 100%;
+  left: -210px;
+  background: aqua;
+  position: absolute;
+  display: inline-block;
+  padding: 2rem;
+  transition: all 0.18s ease-in-out;
+}
+
+#cv-download-button-home-id:hover .slide {
+  left: 0;
+}
+
+#cv-link-for-home {
+  transition: all 0.5s ease-Out;
+  font-size: 2.5rem;
+  font-family: "Ubuntu", sans-serif !important;
+  text-decoration: none;
+  font-weight: 400;
+  color: aqua;
+}
+
+@media screen and (max-width: 1140px) {
+  #scroll-down-right-2 {
+    width: 7rem;
+  }
+}
+@media screen and (max-width: 980px) {
+  .i-am-a-developer-container {
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+  }
+  .span-1-2 {
+    top: 0;
+    left: 0;
+    position: relative !important;
+  }
+  .span-1-1 {
+    top: 0;
+    left: 0;
+    position: relative !important;
+  }
+  #cv-download-button-home-id {
+    margin: 1rem;
+    margin-top: 2rem;
+  }
+  #scroll-down-right-1 {
+    display: inline-block;
+  }
+  #scroll-down-left {
+    display: inline-block;
+  }
+  #scroll-down-right-2 {
+    display: none;
+  }
+  .flex-for-home {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  .flex-for-home-left {
+    padding-left: 2rem;
+    height: 100vh;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0;
+  }
+  #i-am-a {
+    width: 45rem;
+    height: 40rem;
+  }
+  .span-tags {
+    margin: 5px;
+    font-size: 7rem;
+  }
+  .heading-primary {
+    font-size: 7rem !important;
+  }
+  .span-tags-2 {
+    margin: 5px;
+    font-size: 7rem;
+  }
+  .span-tags-3 {
+    margin: 5px;
+    font-size: 7rem;
+  }
+  .span-tags-4 {
+    margin: 2rem;
+    padding-top: 3rem;
+    font-size: 7rem;
+  }
+  .span-tags-5 {
+    margin: 2rem;
+    padding-top: 3rem;
+    font-size: 7rem;
+  }
+  .a-frontend-dev {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 979px) and (min-width: 732px) {
+  .span-tags {
+    font-size: 8rem;
+  }
+  .heading-primary {
+    font-size: 8rem !important;
+  }
+  .span-tags-2 {
+    font-size: 7rem;
+  }
+  .span-tags-3 {
+    font-size: 7rem;
+  }
+  .span-tags-4 {
+    font-size: 7rem;
+  }
+  .span-tags-5 {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 670px) and (min-width: 443px) {
+  .a-frontend-dev {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 590px) {
+  .flex-for-home-left {
+    margin-top: -4rem;
+  }
+  #cv-download-button-home-id {
+    padding: 0.7rem 1rem !important;
+  }
+  .slide {
+    margin-top: -0.7rem;
+    padding: 1rem 1rem !important;
+  }
+  .span-tags {
+    font-size: 6rem;
+  }
+  .heading-primary {
+    font-size: 5rem !important;
+  }
+  .span-tags-2 {
+    font-size: 5rem;
+  }
+  .span-tags-3 {
+    font-size: 5rem;
+  }
+  .span-tags-4 {
+    font-size: 5rem;
+  }
+  .span-tags-5 {
+    font-size: 5rem;
+  }
+  .a-frontend-dev {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  .got-any-questions {
+    font-size: 1.3rem;
+    width: auto;
+    display: inline-block;
+    padding: 0.7rem 0.54rem;
+  }
+  #got-any-questions-link {
+    padding: 0.85rem 0.7rem;
+  }
+}
+@media screen and (max-width: 443px) {
+  .span-tags {
+    font-size: 4.5rem;
+  }
+  .heading-primary {
+    font-size: 4rem !important;
+  }
+  .span-tags-2 {
+    font-size: 4rem;
+  }
+  .span-tags-3 {
+    font-size: 4rem;
+  }
+  .span-tags-4 {
+    font-size: 4rem;
+  }
+  .span-tags-5 {
+    font-size: 4rem;
+  }
+  #cv-link-for-home {
+    padding: 0.5rem;
+    font-size: 2.5rem;
+  }
+  .spiral img {
+    width: 7rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .span-tags {
+    font-size: 4rem;
+  }
+  .heading-primary {
+    font-size: 3.5rem !important;
+  }
+}/*# sourceMappingURL=home.css.map */

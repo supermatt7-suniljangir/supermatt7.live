@@ -1,0 +1,41 @@
+.footer{
+  z-index: -1;
+}
+
+.flex-for-footer {
+  position: relative !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  height: 6rem;
+}
+
+.logo-img-2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 5rem;
+}
+@media screen and (max-width:520px){
+  .flex-for-footer{
+  flex-direction: column;
+  height: 7rem;
+  }
+  .flex-for-footer p{
+    position: absolute;
+    bottom: 0;
+  }
+  .logo-img-2 {
+    
+   top: 0 !important;
+  }
+}
+
+
+
+/*# sourceMappingURL=footer.css.map */

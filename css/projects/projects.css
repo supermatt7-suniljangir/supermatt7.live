@@ -1,0 +1,79 @@
+.swiper {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#projects {
+  position: relative;
+  height: 100vh;
+}
+
+.flex-for-project {
+  position: relative;
+}
+
+.swiper-img {
+  border-radius: 1%;
+  box-shadow: 0 19px 38px transparent, 0 15px 12px transparent;
+  cursor: pointer;
+  height: 450px;
+  width: 800px;
+  cursor: pointer;
+}
+
+.container-for-skills {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev {
+  padding: 1rem;
+}
+
+.swiper-button-next {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  #projects {
+    height: 100vh;
+  }
+  .swiper {
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-for-skills {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  .flex-for-project {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .swiper-img {
+    margin-top: 5rem;
+    cursor: pointer;
+    height: 65vh;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .swiper-img {
+    margin-top: 3rem;
+    cursor: pointer;
+    height: 65vh;
+    width: 95%;
+  }
+  #projects {
+    height: 100vh;
+  }
+  .swiper-pagination {
+    position: absolute;
+  }
+}/*# sourceMappingURL=projects.css.map */

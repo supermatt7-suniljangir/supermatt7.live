@@ -1,0 +1,45 @@
+::-moz-selection {
+  background-color: transparent;
+  color: rgb(21, 202, 148);
+}
+
+::selection {
+  background-color: transparent;
+  color: rgb(21, 202, 148);
+}
+
+body {
+  background: rgba(0, 0, 0, 0.9019607843) !important;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+hr {
+  border: none;
+  height: 1.4px;
+}
+
+hr {
+  background-color: aqua;
+}/*# sourceMappingURL=body.css.map */
