@@ -59,7 +59,7 @@ spanTags.forEach((tag) =>
 //on form submit message
 let formSubmit = () => {
   document.querySelector(".processing").classList.remove("hidden");
-  document.querySelector("#button-2").textContent="sending...";
+  document.querySelector("#button-2").textContent="sending..";
   
 
 }
