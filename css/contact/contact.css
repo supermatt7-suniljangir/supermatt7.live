@@ -307,8 +307,7 @@ textarea:focus {
   .success-message {
     position: fixed;
     top: 70%;
-    left: unset;
-    right: 1rem !important;
+    left: 1rem;
     padding: 1.3rem;
     background-color: #44b566;
     color: white;
@@ -321,9 +320,8 @@ textarea:focus {
     animation: message-sent 1s ease-in-out;
   }
   .processing {
-    left: unset;
+    left: 1rem;
     top: 70%;
-    right: 1rem;
     font-size: 1.5rem;
     outline: none !important;
     border: none !important;
