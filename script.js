@@ -36,9 +36,12 @@ form.addEventListener("submit", (event) => {
       form.reset();
     } else {
       // Error. Do something with the error here.
+      document.querySelector(".processing").classList.add("hidden");
       alert(
         "There was an error submitting your message. Please try again later."
       );
+      
+
     }
   };
 
