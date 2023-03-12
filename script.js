@@ -352,38 +352,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-//disbale image saving and downloading option
-// document.addEventListener('contextmenu', event => event.preventDefault());
-//   change .swiper-for-johndoe.src = "johndoe2.png" when the max width is 500px
-window.addEventListener("resize", () => {
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    document.querySelector(".swiper-for-johndoe").src = "img/johndoe2.png";
-    document.querySelector(".swiper-for-eduhub").src = "img/eduhub2.png";
-    document.querySelector(".swiper-for-rollthedice").src = "img/rolldice2.png";
-    document.querySelector(".swiper-for-guessmunumber").src = "img/guess-2.png";
-  } else {
-    document.querySelector(".swiper-for-johndoe").src = "img/johndoe.png";
-    document.querySelector(".swiper-for-eduhub").src = "img/eduhub.png";
-    document.querySelector(".swiper-for-rollthedice").src =
-      "img/roll-the-dice.png";
-    document.querySelector(".swiper-for-guessmunumber").src =
-      "img/guessmynumber.png";
-  }
-});
 
-if (window.matchMedia("(max-width: 600px)").matches) {
-  document.querySelector(".swiper-for-johndoe").src = "img/johndoe2.png";
-  document.querySelector(".swiper-for-eduhub").src = "img/eduhub2.png";
-  document.querySelector(".swiper-for-rollthedice").src = "img/rolldice2.png";
-  document.querySelector(".swiper-for-guessmynumber").src = "img/guess-2.png";
-} else {
-  document.querySelector(".swiper-for-johndoe").src = "img/johndoe.png";
-  document.querySelector(".swiper-for-eduhub").src = "img/eduhub.png";
-  document.querySelector(".swiper-for-rollthedice").src =
-    "img/roll-the-dice.png";
-  document.querySelector(".swiper-for-guessmynumber").src =
-    "img/guessmynumber.png";
-}
 
 // working with got-any-question popup
 
@@ -419,27 +388,10 @@ if (window.location.hash === "#contact") {
   gotAnyQuestions.classList.add("hidden");
 }
 
-// working with the headache called #contact
 
-//   window.addEventListener('load', function() {
-//     // Check if the current URL contains a hash that matches the id of a section
-//     if (window.location.hash) {
-//       // Remove the hash from the URL and reload the page
-//       window.location = window.location.href.split('#')[0];
-//     }
-//   });
 
-//use instead of uing for loops
-//  const spanTags = document.querySelectorAll('.info-on-card');
-//  spanTags.forEach(tag => tag.classList.add('hidden'));
 
-//or the function
+// get a reference to the animation element
 
-//   const spanTags = document.querySelectorAll('.span1');
-// spanTags.forEach((span) => {
-//   span.classList.add('hidden');
-// });
-
-//this forEach workswell for all the span-1
 // spanTags animations
 spanTags.forEach(tags => tags.classList.add('span1-animation'))
